@@ -7,11 +7,13 @@
     <title>Styling HTML</title>
     <link rel="stylesheet" href="./style.css">
     <style>
-        h1{
-            background-color: rgb(60, 137, 60);
-            font-style: italic;
-            color: white;
-            font-size: 10px;
+        img {
+            width: 200px;
+            padding: 10px;
+        }
+
+        table {
+            border: 5px solid black;
         }
     </style>
 </head>
@@ -19,10 +21,10 @@
 <body>
     <table>
         <tr>
-            <th style="background-color: orange; padding: 50px; color: white; ">Online Exam System</th>
+            <th colspan="2" style="background-color: orange; padding: 30px; color: white; font-size: 40px;">Online Exam System</th>
         </tr>
-        <tr style="background-color:yellow; padding: 10px;">
-            <td>
+        <tr>
+            <td colspan="2" style="background-color:yellow; padding: 3px;">
                 <a href="">Home</a>||
                 <a href="">About US</a>||
                 <a href="">courses</a>||
@@ -31,15 +33,18 @@
                 <a href="">Gallary</a>
             </td>
         </tr>
-        <tr>
-            <td><h1>Welcome to the Exam Online System</h1></td>
+        <tr class="title">
+            <td colspan="2">
+                <h3>Making examinations simple, secure, and accessible anytime.</h3>
+            </td>
         </tr>
-        <tr>
+        <tr id="content">
             <td>
-                <h1 class="heading">
+                <h1 class="heading" style="padding: 20px;">
                     Welcome to the Exam Online System
                 </h1>
-                <img id="exam" src="./pexels-andy-barbour-6684265.jpg" alt="exam image">
+                <hr>
+                <img src="./pexels-andy-barbour-6684265.jpg" alt="exam image">
                 <p class="description">
                     Online Exam System is a web-based platform that helps students take exams online in an easy and
                     secure way. Students can log in, select their subjects, and attempt tests from anywhere.
@@ -59,13 +64,16 @@
                 </p>
             </td>
             <td>
-                <h3 class="heading">Our Director</h3>
+                <h1 class="heading" style="margin: 0px;">Our Director</h1>
+                <hr>
                 <img src="./pexels-worldsikhorg-18870257.jpg" alt="director image">
-                <p class="description">Mr. Aman dhillon has over 15 years of experience in the field of education and technology. He is dedicated to improving online learning opportunities for students.</p>
+                <p class="description">Mr. Aman dhillon has over 15 years of experience in the field of education and
+                    technology. He is dedicated to improving online learning opportunities for students.
+                </p>
             </td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2"  style="background-color: orange; padding: 10px; color: white; text-align: center;">
                 copyright &copy; 2024 Exam Online System. All rights reserved.
             </td>
         </tr>

@@ -1,0 +1,18 @@
+#content {
+    background-color: rgb(135, 136, 136);
+}
+
+.heading {
+    color: black;
+    padding: 5px;
+}
+.title {
+    color: white;
+    font-style: italic;
+    background-color: rgb(104, 153, 104);
+    text-align: center;
+}
+.description {
+    font-weight: 300;
+    color: white;
+}
