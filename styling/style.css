@@ -5,14 +5,18 @@
 .heading {
     color: black;
     padding: 5px;
+    border-bottom: 1px solid white;
+    text-align: center;
 }
 .title {
     color: white;
     font-style: italic;
     background-color: rgb(104, 153, 104);
-    text-align: center;
+    text-align: right;
+    padding-right: 10px;
 }
 .description {
     font-weight: 300;
     color: white;
+    text-align: center;
 }
