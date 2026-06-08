@@ -1,0 +1,49 @@
+.right1, .right2{
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+    animation: moveRight 5s ease-in 1s infinite forwards;
+}
+.left1, .left2{
+    position: absolute;
+    z-index: 10;
+     animation: moveLeft 5s ease-in 1s infinite backwards;
+}
+.background{
+    width: 100%;
+    position: relative;
+}
+.right1{
+     left: 50px;
+      width: 200px;
+}
+.right2{
+    left: 200px;
+     width: 250px;
+}
+.left1{
+    right: 30px;
+     width: 200px;
+      bottom: 90px;
+}
+.left2{
+    right: 200px;
+    width: 130px;
+     bottom: 50px;
+}
+@keyframes moveRight {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(900px);
+    }
+}
+@keyframes moveLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-900px);
+    }
+}
