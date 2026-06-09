@@ -1,49 +1,83 @@
 .right1, .right2{
     position: absolute;
     z-index: 10;
-    bottom: 50px;
-    animation: moveRight 5s ease-in 1s infinite forwards;
 }
+
 .left1, .left2{
     position: absolute;
     z-index: 10;
-     animation: moveLeft 5s ease-in 1s infinite backwards;
 }
+
+.container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 .background{
     width: 100%;
-    position: relative;
+    display: block;
 }
+
 .right1{
-     left: 50px;
-      width: 200px;
+    left: -250px;
+    width: 200px;
+    bottom: 30px;
+    animation: moveRight1 7s linear 1s infinite;
 }
+
 .right2{
     left: 200px;
-     width: 250px;
+    width: 250px;
+    bottom: 1px;
+    animation: moveRight2 5s linear 2s infinite;
 }
+
 .left1{
-    right: 30px;
-     width: 200px;
-      bottom: 90px;
+    right: -250px;
+    width: 200px;
+    bottom: 40px;
+    animation: moveLeft1 3s linear 5s infinite;
 }
+
 .left2{
     right: 200px;
     width: 130px;
-     bottom: 50px;
+    bottom: 10px;
+    animation: moveLeft2 5s linear 1s infinite;
 }
-@keyframes moveRight {
+
+@keyframes moveRight1{
     0%{
-        transform: translateX(0);
+        left: -250px;
     }
     100%{
-        transform: translateX(900px);
+        left: 100%;
     }
 }
-@keyframes moveLeft {
+
+@keyframes moveLeft1{
     0%{
-        transform: translateX(0);
+        right: -250px;
     }
     100%{
-        transform: translateX(-900px);
+        right: 100%;
+    }
+}
+@keyframes moveRight2{
+    0%{
+        left: -250px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes moveLeft2{
+    0%{
+        right: -250px;
+    }
+    100%{
+        right: 100%;
     }
 }
