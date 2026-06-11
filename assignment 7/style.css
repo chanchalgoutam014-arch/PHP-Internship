@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-color: rgb(7, 7, 45);
+    display: inline-block;
+    width: 100%;
+}
+.logo{
+    display: inline-block;
+}
+.nav-bar{
+    display: inline-block;
+}
+h1, h6{
+    margin:0px;
+}
+button{
+    border-radius: 40px;
+}
